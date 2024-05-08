@@ -1,6 +1,7 @@
 
 <?php
     include('log.php'); // Added missing semicolon at the end of the line
+    include('index.html'); // Added missing semicolon at the end of the line
 
     // Getting all values from the HTML form
     if(isset($_POST['submit']))
