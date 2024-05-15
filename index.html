@@ -372,7 +372,7 @@
                   ></textarea>
                 </div>
                 <div class="namuno text-center p-3 ">
-                  <button type="submit" class="buton border-0 p-2 rounded-3" name="submit">Send Message</button>
+                  <button type="" class="sub border-0 p-2 rounded-3" name="">Send Message</button>
                 </div>
               </form>
             </div>
@@ -382,7 +382,15 @@
       <!-- End Contact Section -->
     </main>
     <!-- End #main -->
+ <script>
+    document.getElementById('contactForm').addEventListener('submit', function(event) {
+      // Prevent default form submission
+      event.preventDefault();
 
+      // Display success popup message
+      document.getElementById('successMessage').style.display = 'block';
+    });
+  </script>
     <!-- ======= Footer ======= -->
     <footer id="footer">
       <div class="container">
